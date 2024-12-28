@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(247, 236, 222);;
+}
+
+.heading {
+    border-bottom: 2px dotted black;
+    padding-bottom: 4%;
+    position: relative;
+}
+
+.heading h1{
+    font-family:"Pacifico", cursive;
+    font-size: 50px;
+    text-align: center;
+    width: 21%;
+    background-image: linear-gradient(to top, rgb(219, 175, 30));
+}
+.heading h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 6px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+.heading h1:hover::before{
+    height: 55%;
+}
+
+.container h2 {
+    font-family: Righteous, cursi;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.button
+{
+    border-bottom: 2px dotted black;
+    padding-bottom: 1.8%;
+}
+
+.button button{
+    font-size: 1rem;
+    background-color: #d1512d !important;
+}
+
+table th{
+    padding: .5rem .5rem;
+}
+
+table tbody tr{
+    border-top: 1px solid #dee2e6;
+}
+
+
+.lightContainer{
+    background-color: rgba(0, 0, 0, 0.739);
+  }
+
+  .imgBox{
+    width:500px ;
+    height: 270px;
+  
+  background-color: white;
+  }
+
+  .circle-color{
+    width: 20px;
+    height: 20px;
+  }
+
+  .color1{
+    background-color: #f15f5d;
+  }
+  .color2{
+    background-color: #febe2e;
+  }
+  .color3{
+    background-color: #4db748;
+  }
+
+  .imgBox .p1{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+  }
+
+  .imgBox .p2{
+    font-size: 18px;
+    font-family: "PT Sans Caption", sans-serif;
+  }
+
+  .icon{
+     color: #bb4120;;
+  }
+
+  .visit{
+  background-color:#9eb23b;
+  border: 1px solid #9eb23b;
+  }
+
+  .visit:hover{
+    background-color:#9eb23b !important;
+  }
+
+  .delete{
+    transition: 0.4s;
+  }
+
+  .delete:hover{
+   background-color:  #d30820 !important;
+   border-color:  #ba081d !important;
+  }
+
+  .close{
+    cursor: pointer;
+  }
+
+  .booker::selection,.head1::selection,label::selection,table th::selection,table td::selection{
+    background-color: #fec260 !important;
+  }

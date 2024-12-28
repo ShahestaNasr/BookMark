@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <div class="container px-3">
+        <div class="heading d-flex justify-content-center mt-5">
+            <h1 class="position-relative head1">Bookmarker</h1>
+        </div>
+        <h2 class="mt-4 booker">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+        <div class="site-name">
+            <label class="fw-medium" for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+            <input class="form-control mt-3" placeholder="Bookmark Name" type="text" id="siteName">
+        </div>
+        <div class="site-name mt-3">
+            <label class="fw-medium" for="siteUrl"><i class="fa-solid fa-link pe-2"></i>Site Url</label>
+            <input class="form-control mt-3" placeholder="Website Url" type="text" id="siteUrl">
+        </div>
+        <div class="button mt-4 d-flex justify-content-center">
+            <button onclick="addProduct()" class="btn bg-danger text-center text-white px-5">Submit</button>
+        </div>
+        <table class="bg-white w-100 text-center mt-3">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+    
+        </table>
+    </div>
+    <div class="lightContainer d-none d-flex justify-content-center align-items-center position-fixed top-0 bottom-0 start-0 end-0">
+        <div class="imgBox rounded-2">
+            <div class="icon-container d-flex align-items-center justify-content-between pt-4">
+                <div class="circles d-flex gap-2 ms-4">
+                    <div class="circle-color color1 rounded-circle"></div>
+                    <div class="circle-color color2 rounded-circle"></div>
+                    <div class="circle-color color3 rounded-circle"></div>
+                </div>
+                <div class="close-icon  me-4"><i class="fa-solid fa-xmark fs-3 close"></i></div>
+            </div>
+            <p class="mt-4 ms-4 p1">Site Name or Url is not valid, Please follow the rules below :</p>
+            <p class="p2 ms-4"><i class="fa-regular fa-circle-right p-2 icon"></i>Site name must contain at least 3 characters</p>
+            <p class="p2 ms-4"><i class="fa-regular fa-circle-right p-2 icon"></i>Site URL must be a valid one</p>
+          </div>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
